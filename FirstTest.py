@@ -313,12 +313,11 @@ window = Tk() # 创建窗口
 table = Listbox(master=window) # 创建tableView
 data = ["001","002","003","004","005"]
 for item in data:
-    table.insert(0, item) #给tableView 数据源
+    # 给tableView 数据源
+    table.insert(0, item)
 table.pack() # 将小部件放置到主窗口中
-button = Button(master=window, text = "Test", command = tapbutton) #tapbutton()只调用一次, tapbutton就会一直调用
+button = Button(master=window, text = "Test", command = tapbutton, width = 100, state = NORMAL) #tapbutton()只调用一次, tapbutton就会一直调用
 button.pack()
 window.mainloop() # 进入消息循环 窗口展示出来
-
-
 
 
