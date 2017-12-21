@@ -307,19 +307,23 @@ from book import Info, Author
 
 
 #MARK: UI
-from Tkinter import *
-def tapbutton():
-    print "Test"
-    #整个程序退出并销毁
-    window.quit()
-window = Tk() # 创建窗口
-table = Listbox(master=window) # 创建tableView
-data = ["001","002","003","004","005"]
-for item in data:
-    # 给tableView 数据源
-    table.insert(0, item)
-table.pack() # 将小部件放置到主窗口中
-button = Button(master=window, text = "Quit", command = tapbutton, width = 100, state = NORMAL) #tapbutton()只调用一次, tapbutton就会一直调用
-button.pack()
-window.mainloop() # 进入消息循环 窗口展示出来
+# from Tkinter import *
+# def tapbutton():
+#     print "Test"
+#     #整个程序(窗口)退出并销毁
+#     window.quit()
+# # 创建窗口
+# window = Tk()
+# # 创建tableView
+# table = Listbox(master=window)
+# data = ["001","002","003","004","005"]
+# for item in data:
+#     # 给tableView 数据源
+#     table.insert(0, item)
+# # 将小部件放置到主窗口中
+# table.pack()
+# button = Button(master=window, text = "Quit", command = tapbutton, width = 100, state = NORMAL) #tapbutton()只调用一次, tapbutton就会一直调用
+# button.pack()
+# # 进入消息循环 窗口展示出来
+# window.mainloop()
 
